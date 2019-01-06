@@ -2,12 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 
 const MasterWrapper = styled.div`
-    perspective: 1px;
+    /*perspective: 1px;
     transform-style: preserve-3d;
     height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
-    border: 1px solid black
+    border: 1px solid black 
+    */
 `
 
 const IntroWrapper = styled.div`
@@ -28,15 +29,18 @@ const SectionImage = styled.img`
     background: url(${props => props.image});
     width: 100%;
     background-size: cover;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    /*
     display: flex;
     flex: 1 0 auto;
     position: relative;
     z-index: -1;
-    height: 500px;
-    justify-content: center;
-    align-items: center;
     transform: translateZ(-1px) scale(2);
+    */
 `
+
 const MasterGrid = styled.div`
     width: 620px;
     margin: 0 auto;
