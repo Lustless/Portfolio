@@ -55,3 +55,38 @@ h4 {
   font-style: italic;
   margin: 0px;
 }
+
+
+.Hero {
+  height: 500px;
+  background: url('../images/image1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.HeroGroup {
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  background-color: white;
+}
+
+.Hero h1 {
+  margin: 0;
+  color: grey;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.Hero a {
+  font-size: 18px;
+  font-weight: 600;
+  color: purple;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 100px;
+  margin: 20px;
+  margin-top: 40px;
+}
