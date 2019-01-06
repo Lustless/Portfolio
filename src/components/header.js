@@ -29,12 +29,11 @@ class Header extends React.Component {
     render() {
         return (
             <div className={this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header'}>
+                    <div className="Christie">CHRISTIE TANG</div>
                     <div className="HeaderGroup">
-                        <Link to="/"><img src="https://static.thenounproject.com/png/603655-200.png" img width="30px" /></Link>
-                        <Link to="/courses">Courses</Link>
-                        <Link to="/downloads">Downloads</Link>
-                        <Link to="/workshops">Workshops</Link>
-                        <Link to="/buy"><button>Buy</button></Link>
+                        <div className="about"><Link to="/about">about</Link></div>
+                        <div className="portfolio"><Link to="/portfolio">portfolio</Link></div>
+                        <div className="contact"><Link to="/contact">contact</Link></div>
                     </div>
             </div>
         )

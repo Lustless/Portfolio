@@ -5,6 +5,8 @@ import { StaticQuery, graphql } from 'gatsby'
 import Header from './header'
 import './layout.css'
 
+
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -22,7 +24,8 @@ const Layout = ({ children }) => (
         
           {children}
           <footer>
-            heres the footer that goes at the end
+            Like what you see? Let's talk.
+            ct@christietang.com
           </footer>
       
       </>

@@ -1,22 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+
 .Header {
-    position: fixed;
+    position: relative;
     width: 100%;
-    padding: 50px 0;
-    z-index: 100;
     transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin: 30px;
 }
 
 .HeaderGroup {
-    max-width: 800px;
+    max-width: 500px;
     margin: 0 auto;
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(3, auto);
     align-items: center;
     justify-items: center;
+    margin-top: 30px;
+}
+
+.HeaderGroup a {
+    color: #999999;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'EB Garamond', serif;
+    text-decoration: none;
+    transition: color 0.5s ease 0s;
+    font-weight: 400;
+}
+
+.HeaderGroup a:hover {
+    color: #333333;
+    transition: color 0.5s ease 0s;
+}
+
+
+.portfolio {
+    border-right: 1px solid #999999;
+    border-left: 1px solid #999999;
+    width: 100%;
+}
+
+.Christie {
+    text-align: center;
+    font-size: 37px;
+    font-family: 'Open Sans';
 }
 
 .HeaderScrolled {
     background: rgba(0,0,0,0.75);
-    padding: 15px 0;
+    height: 90px;
+    align-content: right;
 }
+/*
+.HeaderScrolled .HeaderGroup {
+    max-width: 500px;
+    margin: 0 30 0 auto;
+    align-items: right;
+    justify-items: right;
+}
+
+.HeaderScrolled .portfolio {
+     border-right: none;
+     border-left: none;
+     width: 100%;
+}
+*/

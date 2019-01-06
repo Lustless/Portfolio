@@ -2,17 +2,20 @@ import React from 'react'
 import styled from 'styled-components'
 
 const MasterWrapper = styled.div`
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: 1px solid black
 `
 
 const IntroWrapper = styled.div`
-    width: 620px;
-    align-self: center;
     display: block;
-    margin: 0 auto;
-    @media only screen and (max-width: 680px) {
-        width: auto;
-        margin: 0px 30px;
-    }
+    position: relative;
+    background-color: white;
+    z-index: 1;
+    padding-top: 100px;
 `
 const ProblemSolution = styled.div`
     display: flex;
@@ -23,13 +26,25 @@ const ProblemSolution = styled.div`
 
 const SectionImage = styled.img`
     background: url(${props => props.image});
-    height: 500px;
     width: 100%;
     background-size: cover;
-    border: 1px solid black;
-    margin-bottom: 110px;
+    display: flex;
+    flex: 1 0 auto;
+    position: relative;
+    z-index: -1;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(-1px) scale(2);
 `
 const MasterGrid = styled.div`
+    width: 620px;
+    margin: 0 auto;
+    align-self: center;
+    @media only screen and (max-width: 680px) {
+        width: auto;
+        margin: 0px 30px;
+    }
 `
 
 const SectionTitle = styled.h1`
