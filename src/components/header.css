@@ -6,6 +6,7 @@
     width: 100%;
     padding: 30px 0;
     z-index: 100;
+    /* transition: 0.75s; */
 }
 
 .HeaderGroup {
@@ -41,6 +42,10 @@
     width: 100%;
 }
 
+.HeaderScrolled.ChristieWrapper {
+    margin-top: 20px;
+}
+
 .Christie {
     text-align: center;
     font-size: 37px;
@@ -48,12 +53,32 @@
     letter-spacing: 10px;
 }
 
+.ChristieWrapper img {
+    width: 192px;
+    height: 40px;
+    display: none;
+}
+
+@media only screen and (max-width: 530px) {
+    .Christie {
+        display: none;
+    }
+
+    .ChristieLogo {
+        display: inline-block;
+        background: url('../images/christielogo.svg') no-repeat top left;
+        height: 36px;
+        width: 36px;
+        background-size: contain;
+        margin: 12px 25px 12px 0px;
+    }
+}
+
 .HeaderScrolled {
     background: white;
     height: 60px;
     align-content: right;
     position: fixed;
-    padding: 0 30px;
     width: 100%;
     border-bottom: 1px solid #eeeeee;
 }
@@ -61,12 +86,18 @@
 .HeaderScrolled .MasterWrapper {
     display: flex;
     height: 100%;
+    padding: 0 15px 0 30px;
+}
+
+.Header.HeaderScrolled {
+    padding: 0px;
 }
 
 .HeaderScrolled .Christie {
-    margin: auto 0;
     font-size: 16px;
     letter-spacing: 5px;
+    text-align: left;
+    margin: 17px 0px 17px 0px;
 }
 
 .HeaderScrolled .HeaderGroup {  
