@@ -17,9 +17,11 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Title>Hello World, this is my first styled component!</Title>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <h1>Questions</h1>
+    <p>How come my open sans bold isn't rendering correctly?</p>
+    <p>I need help with parallax</p>
+    <p>how to do nested components? two side by side</p>
+    <p>how come i cant get images to show???? struggling just to simply center an image with a certain width</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>

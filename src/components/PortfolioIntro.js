@@ -17,12 +17,19 @@ const IntroWrapper = styled.div`
     background-color: white;
     z-index: 1;
     padding-top: 100px;
+    margin-bottom: 100px;
+    @media only screen and (max-width: 680px) {
+        padding-top: 40px;
+        margin-bottom: 40px;
+    }
 `
 const ProblemSolution = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 110px;
+    @media only screen and (max-width: 680px) {
+        flex-direction: column;
+    }
 `
 
 const SectionImage = styled.img`
@@ -53,6 +60,10 @@ const MasterGrid = styled.div`
 
 const SectionTitle = styled.h1`
     margin: 25px 0px;
+    @media only screen and (max-width: 680px) {
+        font-size: 47px;
+        line-height: 52px;
+    }
 `
 const SectionDescription = styled.body`
 `
@@ -77,6 +88,10 @@ const ProblemText = styled.body`
 `
 const Solution = styled.div`
     margin-left: 10px;
+    @media only screen and (max-width: 680px) {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
 `
 const SolutionTitle = styled.h3`
     font-size: 17px;

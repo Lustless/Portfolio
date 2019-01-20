@@ -6,7 +6,7 @@
     width: 100%;
     padding: 30px 0;
     z-index: 100;
-    /* transition: 0.75s; */
+    
 }
 
 .HeaderGroup {
@@ -72,6 +72,47 @@
         background-size: contain;
         margin: 12px 25px 12px 0px;
     }
+
+    .Header.ChristieWrapper {
+        margin-top: 20px;
+    }
+
+    .Header {
+        background: white;
+        height: 60px;
+        align-content: right;
+        position: fixed;
+        width: 100%;
+        border-bottom: 1px solid #eeeeee;
+        padding: 0;
+    }
+    
+    .Header .MasterWrapper {
+        display: flex;
+        height: 100%;
+        padding: 0 15px 0 30px;
+    }
+    
+    .Header .Christie {
+        font-size: 16px;
+        letter-spacing: 5px;
+        text-align: left;
+        margin: 17px 0px 17px 0px;
+    }
+    
+    .Header .HeaderGroup {  
+        width: 300px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        margin: auto 0 auto auto;
+    }
+    
+    .Header .portfolio {
+        border-right: none;
+        border-left: none;
+    }
+    
 }
 
 .HeaderScrolled {
